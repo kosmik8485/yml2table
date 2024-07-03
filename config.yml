@@ -1,0 +1,14 @@
+log:
+  level: 'info'
+
+groups:
+  group001:
+    replicasets:
+      replicaset001:
+        instances:
+          instance001:
+            roles: [ http-api, daemon ]
+            roles_cfg:
+              http-api:
+                host: '127.0.0.1'
+                port: 8808
